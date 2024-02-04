@@ -37,4 +37,17 @@ img {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
+  img {
+    width: 50%; /* Since square image is viewed at half the viewport */
+    height: auto; /* Maintains aspect ratio */
+  }
+
 }
+
+@media (max-width: 959px) {
+  img {
+    width: 100%; /* Ensures the image is responsive and fills the container */
+    height: auto; /* Maintains aspect ratio */
+  }
+}
+
