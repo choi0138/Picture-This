@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
 
-html,
-body {
+html, body {
   margin: 0;
   border: 0;
   font-family: 'Roboto', sans-serif;
@@ -29,22 +28,17 @@ h4 {
   font-weight: 300;
 }
 
-img {
-  display: block;
-  height: auto;
+picture {
+
 }
+
+img {
+  width: 100%;
+  height: auto; /* maintain aspect ratio */
+  display: block; /* remove any default inline spacing */}
 
 @media (min-width: 960px) {
   .header {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
   }
-
-  img {
-    width: 50%; 
-    height: 0 auto; 
-  }
-
 }
-
